@@ -1,0 +1,11 @@
+[project]
+name = "blocktech-nft"
+requirements = []
+costs_version = 1
+[contracts.blocktech-nft-v1]
+path = "contracts/blocktech-nft-v1.clar"
+depends_on = ["nft-trait"]
+
+[contracts.nft-trait]
+path = "contracts/nft-trait.clar"
+depends_on = []
