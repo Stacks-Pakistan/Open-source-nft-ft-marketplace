@@ -4,10 +4,18 @@ requirements = []
 costs_version = 1
 [contracts.blocktech-nft-v1]
 path = "contracts/blocktech-nft-v1.clar"
-depends_on = ["nft-trait"]
+depends_on = ["nft-trait","ft-trait"]
+
+[contracts.dashboard]
+path = "contracts/dashboard.clar"
+depends_on = ["nft-trait","nft-approvable-trait"]
 
 [contracts.ft-trait]
 path = "contracts/ft-trait.clar"
+depends_on = []
+
+[contracts.nft-approvable-trait]
+path = "contracts/nft-approvable-trait.clar"
 depends_on = []
 
 [contracts.nft-trait]
