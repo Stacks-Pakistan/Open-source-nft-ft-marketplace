@@ -1,10 +1,10 @@
-;; trait deployed by deployer address from ./settings/Devnet.toml
+;; implementing nft-trait
 (impl-trait 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.nft-trait.nft-trait)
 
-;; define a new NFT. Make sure to replace MY-OWN-NFT
+
 (define-non-fungible-token blocktech-nft uint)
 
-;; Store the last issues token ID
+
 (define-data-var last-id uint u0)
 
 ;; Claim a new NFT
